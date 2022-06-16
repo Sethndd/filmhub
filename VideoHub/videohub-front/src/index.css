@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+  color: #1D69AB;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eef0f2;
+}
+
+.navbar {
+  margin-top: -10px;
+  margin-bottom: 4em;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.navbar .buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.navbar button {
+  display: flex;
+  padding-right: 1rem;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.navbar button:hover {
+  background: none;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+section {
+  width: 100%;
+  max-width: 420px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sectionBigger {
+  width: 100%;
+  max-width: 80%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-grow: 1;
+  padding-bottom: 1rem;
+}
+
+a,
+a:visited {
+  color: #963484;
+}
+
+input[type="text"],
+input[type="password"],
+button,
+textarea {
+  font-family: Quicksand, sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #6da9d1;
+}
+
+button:hover {
+  background-color: #1D69AB;
+}
+
+.instructions {
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  background: #000;
+  color: #fff;
+  padding: 0.25rem;
+  position: relative;
+  bottom: -10px;
+}
+
+.instructions>svg {
+  margin-right: 0.25rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.hide {
+  display: none;
+}
+
+.valid {
+  color: limegreen;
+  margin-left: 0.25rem;
+}
+
+.invalid {
+  color: red;
+  margin-left: 0.25rem;
+}
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.line {
+  display: inline-block;
+}
+
+.flexGrow {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.wrapperList {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+}
+
+.elementList {
+  background-color: #eef0f2;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.elementList:hover {
+  color: #fff;
+  background-color: #1D69AB;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapperEvento {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 3px;
+  grid-auto-rows: minmax(100px, auto);
+  align-items: center;
+}
+
+.elementBig {
+  grid-area: 1 / 1 / 5 / 5;
+}
+
+.elementTitle {
+  grid-area: 5 / 1 / 6 / 5;
+}
+
+.elementChat {
+  grid-area: 1 / 5 / 6 / 7;
+}
+
+.elementChatCaja {
+  background-color: #eef0f2;
+  padding: 1rem;
+  justify-content: center; 
+  align-items: center ;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+
+.elementChatBox{
+  grid-area: 1 / 1 / 2 / 2
+}
+
+.elementButtons {
+  grid-area:  2 / 1 / 3 / 2;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.tbox { 
+  grid-area: 1 / 1 / 2 / 4;
+}
+.btn {
+  grid-area: 1 / 4 / 2 / 5;
+  margin: 0; 
+}
+
+.chatGlobes{
+  background-color: #6da9d1;
+  color: #000;
+  min-width : 100%;
+  padding: 0.6rem;
+  margin: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
